@@ -1,0 +1,25 @@
+* {
+    font-family: monaco;
+}
+.container{
+    width: 95%; 
+    height: auto;
+    margin: 0px auto;
+}
+.box-shadow{
+    padding: 10px;
+    box-shadow: 5px 10px 10px 1px #888888;
+}
+h2{
+    text-align: center;
+    color: darkgray;
+}
+.item{
+    display: block;
+    padding: 10px;
+}
+.capa{
+    width: 200px;
+    height: 200px;
+    border-radius: 2px;
+}
