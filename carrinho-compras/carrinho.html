@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho de Compras</title>
     <link rel="stylesheet" href="css/carrinho.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </head>
   <body>
     <div class="container box-shadow">
@@ -13,24 +17,19 @@
         <img src="./img/logo.png" alt="Logo disco de viníl" class="logo">
         <h1 class="titulo">Metal Extremo Discos</h1>
       </header>
-      <h2>Carrinho de Compras</h2>
+      <h2 class="subtitulo">Carrinho de Compras</h2>
       <h3>Itens do carrinho</h3>
-          <ul>
-              <li>
-                  <p>Preço</p>
-              </li>
-              <li>
-                  <p>Quantidade</p>
-              </li>
-          </ul>
-      <hr>
-      <table>
+      <table class="table table-hover">
+          <thead>
+              <th></th>
+              <th></th>
+              <th>Preço</th>
+              <th>Quantidade</th>
+            </thead>
         <tbody>
           <tr>
             <td>
-              <div class="item">
                 <img src="./img/sepultua.jfif" class="capa">
-              </div>
             </td>
             <td>
               <span>Descrição</span>
@@ -44,9 +43,7 @@
           </tr>
           <tr>
             <td>
-              <div class="item">
                 <img src="./img/destruction.jfif" class="capa">
-              </div>
             </td>
             <td>
               <span>Descrição</span>
@@ -60,9 +57,7 @@
           </tr>
           <tr>
             <td>
-              <div class="item">
                 <img src="./img/bathory.jfif" class="capa">
-              </div>
             </td>
             <td>
               <span style="justify-content: first baseline;">Descrição</span>
@@ -74,8 +69,8 @@
               <input type="number">
             </td>
           </tr>
-    </div>
-    </tbody>
+        </tbody>
     </table>
+    </div>
   </body>
 </html>
