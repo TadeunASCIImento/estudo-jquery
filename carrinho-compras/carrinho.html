@@ -13,12 +13,13 @@
   </head>
   <body>
     <div class="container box-shadow">
-      <header>
+      <header class="header">
         <img src="./img/logo.png" alt="Logo disco de viníl" class="logo">
         <h1 class="titulo">Metal Extremo Discos</h1>
       </header>
       <h2 class="subtitulo">Carrinho de Compras</h2>
       <h3>Itens do carrinho</h3>
+      <h4 class="totalizador">Total da Compra:</h4>
       <table class="table table-hover">
         <thead>
           <th></th>
@@ -34,24 +35,24 @@
             <td>
                 <ul>
                     <li>
-                        <p>Descrição</p>
+                        <p class="descricao">Bestial Devastation - Sepultura</p>
                     </li>
                     <li>
-                        <p>Em estoque</p>
+                        <p class="disponibilidade">Em estoque</p>
                     </li>
                     <li>
-                        <input type="checkbox"><span> Para presente</span>
+                        <input type="checkbox" class="presente"><span> Para presente</span>
                     </li>
-                    <li>
+                    <li style="margin-top: 10px;">
                         <a href="#remover"><img src="./img/trash_icon.png">Remover</a>
                     </li>
                 </ul>
             </td>
             <td>
-              <p>R$ 249,90</p>
+              <p class="preco">R$ 249,90</p>
             </td>
             <td>
-              <input type="number">
+              <input id="quantidade" type="number" class="form-control">
             </td>
           </tr>
           <tr>
@@ -61,13 +62,13 @@
             <td>
                 <ul>
                     <li>
-                        <p>Descrição</p>
+                        <p class="descricao">Eternal Devastation - Destruction</p>
                     </li>
                     <li>
-                        <p>Em estoque</p>
+                        <p class="disponibilidade">Em estoque</p>
                     </li>
                     <li>
-                        <input type="checkbox"><span> Para presente</span>
+                        <input type="checkbox" class="presente"><span> Para presente</span>
                     </li>
                     <li>
                         <a href="#remover"><img src="./img/trash_icon.png">Remover</a>
@@ -75,10 +76,10 @@
                 </ul>
             </td>
             <td>
-              <p>R$ 249,90</p>
+              <p class="preco">R$ 249,90</p>
             </td>
             <td>
-              <input type="number">
+              <input id="quantidade" type="number" class="form-control">
             </td>
           </tr>
           <tr>
@@ -88,13 +89,13 @@
             <td>
                 <ul>
                     <li>
-                        <p>Descrição</p>
+                        <p class="descricao">Bathory - Bathory</p>
                     </li>
                     <li>
-                        <p>Em estoque</p>
+                        <p class="disponibilidade">Em estoque</p>
                     </li>
                     <li>
-                        <input type="checkbox"><span> Para presente</span>
+                        <input type="checkbox" class="presente"><span> Para presente</span>
                     </li>
                     <li>
                         <a href="#remover"><img src="./img/trash_icon.png">Remover</a>
@@ -102,10 +103,10 @@
                 </ul>
             </td>
             <td>
-              <p>R$ 249,90</p>
+              <p class="preco">R$ 249,90</p>
             </td>
             <td>
-              <input type="number">
+              <input id="quantidade" type="number" class="form-control">
             </td>
           </tr>
         </tbody>
