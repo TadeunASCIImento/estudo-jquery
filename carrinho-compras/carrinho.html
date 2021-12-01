@@ -10,94 +10,94 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-      <script src="js/carrinho.js" type="text/javascript"></script>
-</head>
-<body>
-    <div class="container box-shadow">
-        <header class="header">
-            <img src="./img/logo.png" alt="Logo disco de viníl" class="logo">
-            <h1 class="titulo">Metal Extremo Discos</h1>
-        </header>
-        <h2 class="subtitulo">Carrinho de Compras</h2>
-        <h3>Itens do carrinho</h3>
-        <h4 class="totalizador"></h4>
-        <table id="itens" class="table table-hover">
-            <thead>
-                <th></th>
-                <th></th>
-                <th>Preço unidade</th>
-                <th>Quantidade</th>
-            </thead>
-            <tbody>
-                <tr class="item">
-                    <td>
-                        <img src="./img/sepultua.jfif" class="capa">
-                    </td>
-                    <td>
-                        <ul>
-                            <li>
-                                <p class="descricao">Bestial Devastation - Sepultura</p>
-                            </li>
-                            <li>
-                                <p class="disponibilidade">Em estoque</p>
-                            </li>
-                            <li>
-                                <input type="checkbox" class="presente"><span> Este pedido é para presente</span>
-                            </li>
-                            <li style="margin-top: 10px;">
-                                <a href="#remover"><img src="./img/trash_icon.png">Remover</a>
-                            </li>
-                        </ul>
-                    </td>
-                    <td>
-                        <p class="preco">R$ 249,90</p>
-                    </td>
-                    <td>
-                        <input type="number" class="quantidade form-control">
-                    </td>
-                </tr>
-                <tr class="item">
-                    <td>
-                        <img src="./img/destruction.jfif" class="capa">
-                    </td>
-                    <td>
-                        <ul>
-                            <li>
-                                <p class="descricao">Eternal Devastation - Destruction</p>
-                            </li>
-                            <li>
-                                <p class="disponibilidade">Em estoque</p>
-                            </li>
-                            <li>
-                                <input type="checkbox" class="presente"><span> Este pedido é para presente</span>
-                            </li>
-                            <li>
-                                <a href="#remover"><img src="./img/trash_icon.png">Remover</a>
-                            </li>
-                        </ul>
-                    </td>
-            <td>
-                <p class="preco">R$ 249,90</p>
-            </td>
-            <td>
-                <input type="number" class="quantidade form-control">
-            </td>
-        </tr>
-        <tr class="item">
-            <td>
-                <img src="./img/bathory.jfif" class="capa">
-            </td>
-            <td>
-                <ul>
-                    <li>
-                        <p class="descricao">Bathory - Bathory</p>
-                    </li>
-                    <li>
-                        <p class="disponibilidade">Em estoque</p>
-                    </li>
-                    <li>
-                        <input type="checkbox" class="presente"><span> Este pedido é para presente</span>
-                    </li>
+      <!-- <script src="public/js/carrinho.js" type="text/javascript"></script> -->
+    </head>
+    <body>
+        <div class="container box-shadow">
+            <header class="header">
+                <img src="./img/logo.png" alt="Logo disco de viníl" class="logo">
+                <h1 class="titulo">Metal Extremo Discos</h1>
+            </header>
+            <h2 class="subtitulo">Carrinho de Compras</h2>
+            <h3>Itens do carrinho</h3>
+            <h4 class="totalizador"></h4>
+            <table id="itens" class="table table-hover">
+                <thead>
+                    <th></th>
+                    <th></th>
+                    <th>Preço unidade</th>
+                    <th>Quantidade</th>
+                </thead>
+                <tbody>
+                    <tr class="item">
+                        <td>
+                            <img src="./img/sepultua.jfif" class="capa">
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    <p class="descricao">Bestial Devastation - Sepultura</p>
+                                </li>
+                                <li>
+                                    <p class="disponibilidade">Em estoque</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="presente"><span> Este pedido é para presente</span>
+                                </li>
+                                <li style="margin-top: 10px;">
+                                    <a href="#remover"><img src="./img/trash_icon.png">Remover</a>
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <p class="preco">R$ 249,90</p>
+                        </td>
+                        <td>
+                            <input type="number" class="quantidade form-control">
+                        </td>
+                    </tr>
+                    <tr id="item" class="item">
+                        <td>
+                            <img src="./img/destruction.jfif" class="capa">
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    <p class="descricao">Eternal Devastation - Destruction</p>
+                                </li>
+                                <li>
+                                    <p class="disponibilidade">Em estoque</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="presente"><span> Este pedido é para presente</span>
+                                </li>
+                                <li>
+                                    <a href="#remover"><img src="./img/trash_icon.png">Remover</a>
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <p class="preco">R$ 249,90</p>
+                        </td>
+                        <td>
+                            <input type="number" class="quantidade form-control">
+                        </td>
+                    </tr>
+                    <tr class="item">
+                        <td>
+                            <img src="./img/bathory.jfif" class="capa">
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    <p class="descricao">Bathory - Bathory</p>
+                                </li>
+                                <li>
+                                    <p class="disponibilidade">Em estoque</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="presente"><span> Este pedido é para presente</span>
+                                </li>
                     <li>
                         <a href="#remover"><img src="./img/trash_icon.png">Remover</a>
                     </li>
@@ -113,7 +113,7 @@
     </tbody>
 </table>
 </div>
-
+<script src="public/js/carrinho-jquery.js" type="text/javascript"></script>
 
 </body>
 </html>
