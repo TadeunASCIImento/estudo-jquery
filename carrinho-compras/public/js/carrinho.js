@@ -1,4 +1,4 @@
-function getValorTotalCarrinho(){
+function getPurchaseTotalValue(){
     let total = 0;
     const itens = document.querySelectorAll(".item");
     for (let i = 0,len = itens.length; i < len;i++){
@@ -32,7 +32,7 @@ function clearTotalizador(totalizador){
 function onLoadPage(){
     const quantidades = document.querySelectorAll('.quantidade');
     quantidades.forEach(e => {
-        e.onchange = getValorTotalCarrinho;
+        e.onchange = getPurchaseTotalValue;
     });
 }
 window.onload = onLoadPage;
