@@ -23,4 +23,3 @@ function onloadPage(){
     $('.quantidade').on('change', () => getPurchaseTotalValue());
 }
 window.onload = onloadPage;
-// Alterando o arquivo para teste do meld
