@@ -4,7 +4,7 @@ $(document).ready(() => {
 
 function getPurchaseTotalValue(){
     let total = 0;
-    [ ...$(".item") ].forEach(item => {
+    [...$(".item")].forEach(item => {
         if ($('.quantidade',item).val() < 0){
             $('.quantidade', item).val('');
         } else {
@@ -24,6 +24,11 @@ function number(string){
 }
 
 function onloadPage(){
+<<<<<<< HEAD
+    $('.quantidade').on('change', () => getPurchaseTotalValue());
+}
+window.onload = onloadPage;
+=======
     $('.quantidade').change(() => getPurchaseTotalValue());
 }
-
+>>>>>>> main
