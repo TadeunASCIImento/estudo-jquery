@@ -1,6 +1,10 @@
+$(document).ready(() => {
+    onloadPage();
+});
+
 function getPurchaseTotalValue(){
     let total = 0;
-    [ ...$(".item") ].forEach(item => {
+    [...$(".item")].forEach(item => {
         if ($('.quantidade',item).val() < 0){
             $('.quantidade', item).val('');
         } else {
@@ -10,7 +14,7 @@ function getPurchaseTotalValue(){
         }
     });
 }
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 function money(value, currency){
     return value.toLocaleString(currency,{style:'currency', currency: currency});
 }
@@ -20,6 +24,5 @@ function number(string){
 }
 
 function onloadPage(){
-    $('.quantidade').on('change', () => getPurchaseTotalValue());
+    $('.quantidade').change(() => getPurchaseTotalValue());
 }
-window.onload = onloadPage;
