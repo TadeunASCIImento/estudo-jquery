@@ -5,12 +5,13 @@ $(document).ready(() => {
 function getPurchaseTotalValue(){
     let total = 0;
     [ ...$(".item") ].forEach(item => {
-        if ($('.quantidade',item).val() < 0){
-            $('.quantidade', item).val('');
+        const $quantidade = $('.quantidade', item);
+        if ($quantidade.val() < 0){
+            $quantidade.val('');
         } else {
-            $(".totalizador").val('');
-            total += $('.quantidade',item).val() * number($('.preco',item).text());
-            $('.totalizador').text('Total da Compra:'.concat(money(total, 'BRL')));                                                                                 
+            const $totalizador = $(".totalizador");
+            total += $quantidade.val() * number($('.preco',item).text());
+            $totalizador.text('Total da Compra:'.concat(money(total, 'BRL')));                                                                                 
         }
     });
 }
